@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: #2c3e50;
+    padding: 1rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    padding: 4rem 1rem;
+    color: white;
+    text-align: center;
+}
+
+.our-story {
+    padding: 4rem 1rem;
+    background: #f5f6fa;
+   
+}
+
+.story-content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-image {
+    text-align: center;
+}
+
+.our-team {
+    padding: 4rem 1rem;
+    background: white;
+    text-align: center;
+    
+}
+
+.team-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-card {
+    background: #f5f6fa;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.our-vision {
+    padding: 4rem 1rem;
+    background: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.vision-content {
+    max-width: 1200px;
+    margin: 0 auto;
+     align-items: center;
+    justify-content: center;
+}
+
+.vision-values {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 1000px;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.value-card i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.testimonials {
+    padding: 4rem 1rem;
+    background: #364a5e;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.testimonial-card {
+    background: #2c3e50;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    margin-top: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     gap: 15rem;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background: #1a252f;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media h3,
+.footer-links h3 {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap:10px
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
